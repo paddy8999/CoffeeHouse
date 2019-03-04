@@ -30,6 +30,8 @@ public class ClientWriterThread extends Thread {
 			packet.writeJson(writer);
 			
 			System.out.println(line);
+
+			//packet.flush();
 		}
 
 		scanner.close();
